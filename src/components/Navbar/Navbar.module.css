@@ -2,4 +2,35 @@
     width: 100vw;
     height: 60px;
     background-color: #131A22;
+    display: flex;
+}
+
+.logo {
+    background: url("https://ik.imagekit.io/wmunzpstb/amazon-image/sprite_350x.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672090156807") no-repeat -9px -50px;
+    width: 99px;
+    height: 31px;
+    margin: 18px;
+}
+
+.locator {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.location {
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.locationImage {
+    background: url("https://ik.imagekit.io/wmunzpstb/amazon-image/sprite_350x.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672090156807") no-repeat -55px -300px;
+	width: 34px;
+	height: 40px;
+}
+
+.search {}
+
+.searchbar {
+    
 }

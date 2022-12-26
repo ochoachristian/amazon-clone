@@ -9,7 +9,20 @@ export default class Navbar extends Component {
   render() {
     return (
       <div className={styles.navbar}>
-        Navbar 
+        <div className={styles.logo}></div>
+
+        <div className={styles.locator}>  
+          <div className={styles.locationImage}></div>
+          <div className={styles.location}>Staten Island</div>
+        </div> 
+
+        <div className={styles.search}>
+          <div></div>
+          <div>
+            <input type="text" className={styles.searchbar} />
+          </div>
+          <div></div>
+        </div>
       </div>
     )
   }
