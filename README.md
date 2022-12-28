@@ -1,1 +1,1 @@
-Amazone clone work in progress
+Amazon clone work in progress
