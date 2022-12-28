@@ -1,0 +1,12 @@
+.mainPage {
+    width: 100vw;
+    height: 100vh;
+    background: url("https://ik.imagekit.io/wmunzpstb/amazon-image/1348517_in_prime_2_pd_3000x1200_Eng._CB663273097_.jpg.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672090154050") no-repeat;
+    background-size: 100vw; 
+}
+
+.mainAd {
+    padding-top: 280px;
+    display: flex;
+    flex-wrap: wrap;
+}

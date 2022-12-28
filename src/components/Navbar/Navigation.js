@@ -8,6 +8,7 @@ export default class Navbar extends Component {
     }
   render() {
     return (
+      <div>
       <div className={styles.navbar}>
         <div className={styles.logo}></div>
 
@@ -48,6 +49,20 @@ export default class Navbar extends Component {
           <div id={styles.cartText}>Cart</div>
         </div>
 
+      </div>
+
+      <div className={styles.navFooter}>
+          <div className={styles.footerText}>Best Seller</div>
+          <div className={styles.footerText}>Mobile</div>
+          <div className={styles.footerText}>Amazon Pay</div>
+          <div className={styles.footerText}>Fashion</div>
+          <div className={styles.footerText}>Electronics</div>
+          <div className={styles.footerText}>Prime</div>
+          <div className={styles.footerText}>New Releases</div>
+          <div className={styles.footerText}>Customer Service</div>
+          <div className={styles.footerText}>Computers</div>
+          <div className={styles.footerText}>Home & Kitchen</div>
+      </div>
       </div>
     )
   }

@@ -1,0 +1,24 @@
+.container {
+    height: 420px;
+    width: 335px;
+    background-color: white;
+}
+
+img {
+    width: 300px;
+}
+
+.header {
+    font-size: 21px;
+    line-height: 27px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.body {
+    padding-left: 15px;
+}
+
+.footer {
+    padding-left: 5%;
+}

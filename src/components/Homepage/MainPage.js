@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import AdvertisementOne from './AdvertisementOne/AdvertisementOne';
+import styles from './MainPage.module.css'
 
 export default class MainPage extends Component {
     constructor(props) {
@@ -7,8 +9,16 @@ export default class MainPage extends Component {
     }
   render() {
     return (
-      <div>
-        Main 
+      <div className={styles.mainPage}>
+  
+        <div className={styles.mainAd}>
+          <AdvertisementOne />
+          <AdvertisementOne />
+          <AdvertisementOne />
+          <AdvertisementOne />
+          <AdvertisementOne />
+        </div>
+
       </div>
     )
   }

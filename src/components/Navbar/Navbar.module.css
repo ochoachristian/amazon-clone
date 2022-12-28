@@ -32,6 +32,7 @@
 
 .searchBoxComponent {
     display: flex;
+    margin-left: 10px;
 }
 .select {
     width: 56px;
@@ -118,5 +119,19 @@
 
 #cartText {
     margin-top: 20px;
+    font-weight: bold;
+}
+
+.navFooter {
+    width: 100vw;
+    height: 30px;
+    background-color: #22303E;
+    color: white;
+    display: flex;
+}
+
+.footerText {
+    margin: 5px 10px;
+    font-size: 14px;
     font-weight: bold;
 }
