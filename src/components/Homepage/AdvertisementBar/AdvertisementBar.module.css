@@ -1,9 +1,10 @@
 .container {
-    height: 220px;
+    height: 300px;
     width: 1330px;
     background-color: white;
     margin: 5px;
     flex-direction: row;
+    
 }
 
 #image {
@@ -21,6 +22,9 @@
 
 .body {
     padding-left: 8px;
+    display: flex;
+    overflow: auto;
+    max-width: 1300px;
 }
 
 .footer {
