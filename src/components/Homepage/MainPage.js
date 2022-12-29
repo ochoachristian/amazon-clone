@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import AdvertisementFour from './AdvertisementFour/AdvertisementFour';
 import AdvertisementOne from './AdvertisementOne/AdvertisementOne';
 import styles from './MainPage.module.css'
 
@@ -13,10 +14,11 @@ export default class MainPage extends Component {
   
         <div className={styles.mainAd}>
           <AdvertisementOne />
+          <AdvertisementFour />
           <AdvertisementOne />
           <AdvertisementOne />
-          <AdvertisementOne />
-          <AdvertisementOne />
+           
+          
         </div>
 
       </div>
