@@ -6,6 +6,7 @@ import MainPage from './components/Homepage/MainPage';
 import Navbar from './components/Navbar/Navigation';
 import PlaceOrder from './components/Orders/PlaceOrder';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import CartContextProvider from './components/CartContext';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className="App">
         <Navbar />
 
+        <CartContextProvider >
         <Routes>
           
           <Route path='/display' element={<DisplayContent />} />
@@ -24,7 +26,8 @@ function App() {
           <Route path='' element={<MainPage />} />
           
         </Routes>
-        
+        </CartContextProvider>
+
       </div>
     </Router>
   );
