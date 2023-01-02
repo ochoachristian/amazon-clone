@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom';
 import Product from './Product'
 import styles from './RightPanel.module.css'
 
@@ -8,10 +9,10 @@ export default function RightPanel(props) {
 
     useEffect(() => {
         let list = [
-            {name: "iPhone", rating: "34,656", price: "$1,350", image: "https://ik.imagekit.io/wmunzpstb/amazon-image/mobiles/71w3oJ7aWyL._AC_UL640_FMwebp_QL65_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672090159136"},
-            {name: "iPhone", rating: "34,656", price: "$1,350", image: "https://ik.imagekit.io/wmunzpstb/amazon-image/mobiles/71w3oJ7aWyL._AC_UL640_FMwebp_QL65_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672090159136"},
-            {name: "iPhone", rating: "34,656", price: "$1,350", image: "https://ik.imagekit.io/wmunzpstb/amazon-image/mobiles/71w3oJ7aWyL._AC_UL640_FMwebp_QL65_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672090159136"},
-            {name: "iPhone", rating: "34,656", price: "$1,350", image: "https://ik.imagekit.io/wmunzpstb/amazon-image/mobiles/71w3oJ7aWyL._AC_UL640_FMwebp_QL65_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672090159136"}
+            {id: "123456", name: "iPhone", rating: "34,656", price: "$1,350", image: "https://ik.imagekit.io/wmunzpstb/amazon-image/mobiles/71w3oJ7aWyL._AC_UL640_FMwebp_QL65_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672090159136"},
+            {id: "123457", name: "iPhone", rating: "34,656", price: "$1,350", image: "https://ik.imagekit.io/wmunzpstb/amazon-image/mobiles/71w3oJ7aWyL._AC_UL640_FMwebp_QL65_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672090159136"},
+            {id: "123454", name: "iPhone", rating: "34,656", price: "$1,350", image: "https://ik.imagekit.io/wmunzpstb/amazon-image/mobiles/71w3oJ7aWyL._AC_UL640_FMwebp_QL65_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672090159136"},
+            {id: "123458", name: "iPhone", rating: "34,656", price: "$1,350", image: "https://ik.imagekit.io/wmunzpstb/amazon-image/mobiles/71w3oJ7aWyL._AC_UL640_FMwebp_QL65_.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1672090159136"}
         ]
 
         setListOfProduct(list);
@@ -27,10 +28,11 @@ export default function RightPanel(props) {
         /> */}
         {
             listOfProduct.map((item) => {
+                <Link to='/order/item.id'>
                 <Product  product={item} />
-                console.log(item.rating)
-            })
-            //<h1>test</h1>         
+                </Link>
+                // console.log(item.rating)
+            })         
         }
         
         

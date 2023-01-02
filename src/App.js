@@ -5,29 +5,26 @@ import DisplayContent from './components/DisplayContent/DisplayContent';
 import MainPage from './components/Homepage/MainPage';
 import Navbar from './components/Navbar/Navigation';
 import PlaceOrder from './components/Orders/PlaceOrder';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
-        <Switch>
-          
-          <Route path='/'>
-              <MainPage />
-          </Route>
-          <Route path='/display'>
-              <DisplayContent />
-          </Route>
-          <Route path='/order'>
-              <PlaceOrder />
-          </Route>
-          <Route path='/checkout'>
-              <Checkout />
-          </Route>
 
-        </Switch>
+        <Routes>
+          
+          <Route path='/display' element={<DisplayContent />} />
+  
+          <Route path='/order/:id' element={<PlaceOrder />}/>
+      
+          <Route path='/checkout' element={<Checkout />} />
+
+          <Route path='' element={<MainPage />} />
+          
+        </Routes>
+        
       </div>
     </Router>
   );
